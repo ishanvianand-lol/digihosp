@@ -1,73 +1,129 @@
-# React + TypeScript + Vite
+# 🏥 TrustHeal — AI + Blockchain Powered Digital Hospital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TrustHeal is a next-generation digital hospital infrastructure that combines **Artificial Intelligence** for medical intelligence and **Blockchain** for trust, privacy, and interoperability of health records.
 
-Currently, two official plugins are available:
+It is designed to solve the biggest problems in healthcare today:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fragmented medical records
+- Lack of trust between patients and providers
+- Data privacy risks
+- Inefficient diagnosis workflows
+- No ownership of patient data
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🚨 The Problem
 
-## Expanding the ESLint configuration
+Healthcare systems today suffer from:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Medical data scattered across hospitals
+- Patients having no control over their records
+- Manual diagnosis and triage delays
+- Data tampering risks
+- No secure cross-hospital interoperability
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A patient’s history is **critical**, yet inaccessible when needed most.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 💡 The Solution
+
+TrustHeal creates a **trust layer** using blockchain and a **decision layer** using AI.
+
+| Layer              | Technology | Purpose                                |
+| ------------------ | ---------- | -------------------------------------- |
+| Trust Layer        | Blockchain | Immutable, tamper-proof health records |
+| Intelligence Layer | AI         | Symptom analysis, risk scoring, triage |
+| Application Layer  | Web App    | Patient + Doctor interface             |
+
+---
+
+## 🧠 AI Capabilities
+
+- Symptom-based preliminary diagnosis
+- Risk scoring from patient history
+- Smart triage suggestions
+- Pattern detection from medical history
+- Personalized health insights
+
+AI reduces the cognitive load on doctors and speeds up early intervention.
+
+---
+
+## 🔗 Blockchain Capabilities
+
+- Patient-owned health records
+- Immutable storage of reports & prescriptions
+- Secure sharing across hospitals
+- Zero data tampering
+- Audit trail of every access
+
+Patients control **who sees what**.
+
+---
+
+## 🏗️ Architecture
+
+```
+Frontend (Vite + React)
+        ↓
+Backend APIs (Node / Supabase)
+        ↓
+AI Engine (Diagnosis & Risk Models)
+        ↓
+Blockchain Layer (Medical Record Integrity)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👩‍⚕️ For Patients
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Upload and manage medical records
+- AI-based health insights
+- Secure sharing with doctors
+- Full ownership of data
+
+## 👨‍⚕️ For Doctors
+
+- View verified patient history
+- AI-assisted diagnosis support
+- Faster decision making
+- Trusted medical records
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Vite, Tailwind
+- **Backend:** Supabase, Node
+- **AI Layer:** ML models for diagnosis & triage
+- **Blockchain:** Medical record integrity & access logs
+- **Auth:** Secure OAuth
+
+---
+
+## 🔐 Security & Privacy
+
+- End-to-end encrypted data
+- Blockchain-backed record integrity
+- Role-based access
+- Patient consent driven sharing
+
+---
+
+## 🌍 Vision
+
+To create a healthcare system where:
+
+> Medical data is **owned by patients**,
+> Trusted by doctors,
+> And enhanced by AI.
+
+---
+
+## 🚀 Future Scope
+
+- Integration with hospitals & labs
+- Wearable device data ingestion
+- Advanced predictive health analytics
+- Insurance verification via blockchain
